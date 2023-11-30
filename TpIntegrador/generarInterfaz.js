@@ -1,3 +1,5 @@
+
+//Funcion para generar interfaz
 // Función pura que genera la interfaz como una cadena de texto (Funcion pura porque no tiene efectos secundarios)
 function generarTextoInterfaz() {
     return 'Hola Olivia \n'

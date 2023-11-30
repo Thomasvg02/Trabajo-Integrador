@@ -1,6 +1,8 @@
 const ps = require('prompt-sync');
 const prompt = ps();
 
+
+//Clase que genera una nueva tarea con sus atributos y metodo correspondiente para ver detalles y editarlos
 class TareaNueva {
   constructor(nombre, estado, vencimiento, dificultad) {
     this.nombrePrivado = '' || nombre;
@@ -141,23 +143,23 @@ class TareaNueva {
         switch (decision) {
           case 'Nombre':
             tareaSeleccionada.setNombre();
-            tareaSeleccionada.ultimaEdicion = new Date(); 
+            tareaSeleccionada.ultimaEdicion = new Date();
             break;
           case 'Descripcion':
             tareaSeleccionada.setDescripcion();
-            tareaSeleccionada.ultimaEdicion = new Date(); 
+            tareaSeleccionada.ultimaEdicion = new Date();
             break;
           case 'Estado':
             tareaSeleccionada.setEstado();
-            tareaSeleccionada.ultimaEdicion = new Date(); 
+            tareaSeleccionada.ultimaEdicion = new Date();
             break;
           case 'Vencimiento':
             tareaSeleccionada.setVencimiento();
-            tareaSeleccionada.ultimaEdicion = new Date(); 
+            tareaSeleccionada.ultimaEdicion = new Date();
             break;
           case 'Dificultad':
             tareaSeleccionada.setDificultad();
-            tareaSeleccionada.ultimaEdicion = new Date(); 
+            tareaSeleccionada.ultimaEdicion = new Date();
             break;
           case 0:
             return;
@@ -176,8 +178,4 @@ class TareaNueva {
   }
 }
 
-
-
-
 module.exports = TareaNueva;
-

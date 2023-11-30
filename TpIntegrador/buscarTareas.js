@@ -2,6 +2,8 @@ const ps = require('prompt-sync');
 const prompt = ps();
 const TareaNueva = require('./TareaNueva.js');
 
+//Clase para buscar las Tareas por nombre
+
 class buscarTareas {
   constructor(tareas) {
     this.tareas = tareas
